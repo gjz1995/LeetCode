@@ -64,4 +64,23 @@
     }
     ```
 
+- 矩阵行列重构（或者使用队列 566）
+
+    ```java
+    class Solution {
+        public int[][] matrixReshape(int[][] nums, int r, int c) {
+            // 合法性判断省略
+    
+            int total = r * c;
+            int[][] res = new int[r][c];
+            for(int t = 0; t < total; t++) {
+                res[t/c][t%c] = nums[t/column][t%column];
+            }
+    
+            return res;
+        }
+    }
+    
+    ```
+
     
