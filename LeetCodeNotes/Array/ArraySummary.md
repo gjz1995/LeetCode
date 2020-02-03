@@ -84,3 +84,31 @@
     ```
 
     
+
+- 返回长度为 0 的数组（空数组），例如：`[]`，`return new int[0]`；
+
+- 比较两个数组值相等：`Arrays.equals(array1, array2);`
+
+- Java 中 HashMap 遍历方式：
+
+    ```java
+    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+     
+    //遍历map中的键
+     
+    for (Integer key : map.keySet()) {
+     
+        System.out.println("Key = " + key);
+     
+    }
+     
+    //遍历map中的值
+     
+    for (Integer value : map.values()) {
+     
+        System.out.println("Value = " + value);
+     
+    }
+    ```
+
+    
