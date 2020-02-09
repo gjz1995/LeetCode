@@ -87,6 +87,8 @@
 
 - 返回长度为 0 的数组（空数组），例如：`[]`，`return new int[0]`；
 
+- 数组全部填充一个元素：`Arrays.fill(数组名, 值);`
+
 - 比较两个数组值相等：`Arrays.equals(array1, array2);`
 
 - Java 中 HashMap 遍历方式：

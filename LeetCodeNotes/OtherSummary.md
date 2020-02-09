@@ -6,7 +6,25 @@
 
 - `map.get(key)` 不能使用 `++`运算符，可以使用 `+1` 代替；
 
+- 遍历 Key 和 Value 的方式：
 
+    ```java
+    HashMap<Integer, Integer>() map  = new HashMap<>();  
+    for (Integer key : map.keySet()){
+    }
+    for(Integer value : map.values()){
+    }
+    ```
+
+- 已经含有 Key 则对应 value + 1，否则放入
+
+    ```java
+    HashMap<Integer, Integer> map = new HashMap<>();
+    // 这里的 defaultValue 设置为 0，根据题意设置即可
+    map.put(key, map.getOrDefault(key, 0) + 1);
+    ```
+
+    
 
 
 
