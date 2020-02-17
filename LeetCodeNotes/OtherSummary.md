@@ -24,9 +24,16 @@
     map.put(key, map.getOrDefault(key, 0) + 1);
     ```
 
-    
 
 
+
+## 零碎的
+
+- 在 Java 中
+
+    *   数组相关，用 `length`
+    *   集合相关，用 `size()`
+    *   字符串相关，用 `length()`
 
 ## 二、常见特殊情况
 
