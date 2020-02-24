@@ -26,7 +26,47 @@
     map.put(key, map.getOrDefault(key, 0) + 1);
     ```
 
+- 遍历整个 hash 表方式
 
+    ```java
+    for (Entry<String, String> entry : map.entrySet()) {
+        String key = entry.getKey();
+        String value = entry.getValue();
+        System.out.println(key + "," + value);
+    }
+    ```
+
+- 根据 value 值查找键值对
+
+    ```java
+    HashMap<String,Integer> map = new HashMap<>();
+    map.put("A", "1");
+    map.put("B", "2");
+    map.put("C", "3");
+    map.put("D", "1");
+    map.put("E", "2");
+    map.put("F", "3");
+    map.put("G", "1");
+    map.put("H", "2");
+    map.put("I", "3");
+    
+    List<String> removeKeys = new ArrayList<String>();
+    for (Entry<String, String> entry : map.entrySet()) {
+        if (!entry.getValue().equals("1")) {
+            removeKeys.add(entry.getKey());
+        }
+    }
+    for (String removeKey : removeKeys) {
+        map.remove(removeKey);
+    }
+    for (Entry<String, String> entry : map.entrySet()) {
+        String key = entry.getKey();
+        String value = entry.getValue();
+        System.out.println(key + "," + value);
+    }
+    ```
+
+    
 
 
 ## 二、零碎知识点

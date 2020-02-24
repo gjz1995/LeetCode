@@ -83,7 +83,7 @@
     
     ```
 
-    
+- 字符型数组 `char[] str` 作为字符串输出：`String.valueOf(str)`
 
 - 返回长度为 0 的数组（空数组），例如：`[]`，`return new int[0]`；
 
